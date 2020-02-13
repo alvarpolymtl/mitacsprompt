@@ -11,7 +11,7 @@ def load_data(schema, table):
     return (data)
 
 #Database connection with schema.public.Canada_2017_TechnologyTotals.TXT
-conn = psycopg2.connect(host="4point0fs.gi.polymtl.ca",database="test_aberdeen_1000", user="alvar", password="1975Donaji@")
+conn = psycopg2.connect(host="XXXXXXXX",database="XXXXXX", user="XXXXXX", password="XXXXXXXX")
 cursor = conn.cursor()
 cursor.execute("SET search_path TO public")
 data = load_data("public","\"Canada_2017_TechnologyTotals.TXT\"")
