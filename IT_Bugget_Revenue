@@ -1,0 +1,6 @@
+select "IT_BUDGET", "ENT_REVEN_DISCRETE", "STATE" from "Canada_2018_IT_Spend"
+inner JOIN  "Canada_2018_Site_Level_Enterprise"
+ON "Canada_2018_IT_Spend".index = "Canada_2018_Site_Level_Enterprise".index
+inner join "Canada_2018_Site_Description"
+on "Canada_2018_IT_Spend".index = "Canada_2018_Site_Description".index
+and "STATE" = 'QC'
