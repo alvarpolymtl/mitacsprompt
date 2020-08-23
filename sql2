@@ -1,0 +1,5 @@
+select "SIC4_CODE", count("SIC4_CODE") AS "value_occurrence", "SIC4_DESC"
+from "Canada_2018_Site_Description"
+group by "SIC4_CODE", "SIC4_DESC"
+order by value_occurrence desc
+limit 35;
